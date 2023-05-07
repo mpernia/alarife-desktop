@@ -1,0 +1,32 @@
+#include "winver.h"
+
+IDI_ICON1               ICON    DISCARDABLE     "images/alarife.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGS 0x0L
+ FILEFLAGSMASK 0x3fL
+ FILEOS 0x00040004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Manzinella Digital"
+            VALUE "FileDescription", "Generador de encicplopedias temáticas y sitios web"
+            VALUE "FileVersion", "2017.04.21"
+            VALUE "LegalCopyright", "Copyright (C) 2010 - 2017. Manzinella Digital."
+            VALUE "InternalName", "alarife"
+            VALUE "OriginalFilename", "alarife.exe"
+            VALUE "ProductName", "Alarife. Generador de enciclopedias"
+            VALUE "ProductVersion", "2017.04.21"
+		END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END

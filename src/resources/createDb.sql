@@ -1,0 +1,14 @@
+CREATE TABLE adjuntos(id_adjunto integer(10) primary key, descripcion varchar(250) NULL, extension varchar(5) NULL, tipo char NULL);
+CREATE TABLE articulo( id_articulo integer(10) primary key, nombre varchar(250) NULL, resumen text NULL, contenido text NULL, claves text NULL, fuente varchar(250) NULL, fecha1 date NOT NULL default '0000-00-00', fecha2 date NOT NULL default '0000-00-00', usuario integer NULL, nivel integer NULL, enciclopedia integer NULL);
+CREATE TABLE articuloarticulos (articulo integer NULL, IdArticuloLink  integer NULL );
+CREATE TABLE articuloautores(articulo integer(10) NULL, autor integer(10) NULL);
+CREATE TABLE autor(id_autor integer(10) primary key, nombre varchar(250) NULL, titulo varchar(200) NULL, cargo varchar(200) NULL, correo varchar(250) NULL, foto integer NULL );
+CREATE TABLE enc_autor (enciclopedia  integer NULL, autor integer NULL, colaborador integer NULL, equipo integer NULL);
+CREATE TABLE enc_tipo_ext (enciclopedia  integer NULL, archivo varchar(50) NULL, extension varchar(255) NULL);
+CREATE TABLE enc_usuario (enciclopedia  integer NULL, usuario integer NULL, tipousuario integer NULL);
+CREATE TABLE enciclopedia (id_enciclopedia integer(10) primary key, nombre varchar(250) NULL, resumen text NULL, logo varchar(50), plantilla varchar(255), fecha_actualizacion  datetime NULL);
+CREATE TABLE nivel (id_nivel integer(10) primary key, nombre varchar(250) NULL, resumen text NULL, padre integer NULL, usuario integer NULL, enciclopedia  integer NULL, orden integer NULL);
+CREATE TABLE tiposusuarios (id_tipo_usuario integer(10) primary key, descripcion varchar(50) NULL);
+CREATE TABLE usuario (id_usuario integer(10) primary key, nombre varchar(250) NULL, usuario varchar(50) NULL, clave varchar(32) NULL, tipousuario  integer NULL);
+INSERT INTO tiposusuarios VALUES(1,'Editor Jefe');
+INSERT INTO tiposusuarios VALUES(2,'Editor');

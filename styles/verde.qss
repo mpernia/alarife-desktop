@@ -1,0 +1,184 @@
+/**************************************************************************** 
+**
+** CopyLeft: 2011 Maikel Enrique Pernía Matos
+**
+** Contact: corba@grannet.grm.sld.cu
+** 
+** This file is part of the QSS Editor application.
+**
+** GNU General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU
+** General Public License version 3.0 as published by the Free Software
+** Foundation and appearing in the file LICENSE.GPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU General Public License version 3.0 requirements will be
+** met: http://www.gnu.org/copyleft/gpl.html.
+**
+** 
+****************************************************************************/
+
+QMenuBar{
+    border-image: none;
+    border-style: none;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(150,115,85);
+    padding: 2px;
+    background: none;
+    background-color: rgb(152,212,182);
+}
+
+QMenuBar::item:hover {
+    border-width: 5;
+}
+
+QMenuBar::item:on {
+    border-width: 5;
+}
+
+QMenuBar::item{
+    background: none;
+    background-color: rgb(152,212,182);
+}
+
+QMenuBar::Separator{
+    background-color: rgb(152,212,182);
+}
+
+QMenu{
+    background: none;
+    background-color: rgb(152,212,182);
+}
+
+QToolBar{
+    background-color: rgb(218,242,230);
+    selection-color: black;
+    selection-background-color: rgb(152,212,182);
+    border-bottom-color: rgb(152,212,182);
+}
+
+QToolBox{
+    background-color: rgb(218,242,230);
+    selection-color: black;
+    selection-background-color: rgb(140,85,54);
+}
+
+QToolButton{
+    selection-color: black;
+    selection-background-color: rgb(152,212,182);
+    background-color: rgb(218,242,230);
+    border-width: 0px;
+    
+    border-style: solid;
+    border-radius: 4;
+    padding: 2px;
+}
+
+QToolButton:hover {
+    background-color: rgb(152,212,182);
+    border-color: rgb(32, 95, 63);
+    border-width: 2px;
+}
+
+QPushButton {
+    background:rgb(218,242,230);
+    border-width: 1px;
+    border-color: rgb(32, 95, 63);
+    border-style: solid;
+    border-radius: 5;
+    padding: 3px;
+    min-width: 9ex;
+    min-height: 2.5ex;
+}
+
+QPushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: rgb(152,212,182);
+    border-color: rgb(32, 95, 63);
+    border-width: 2px;
+}
+
+QPushButton:hover {
+    background-color: rgb(152,212,182);
+    border-color: rgb(32, 95, 63);
+    border-width: 2px;
+}
+
+QComboBox {
+    border: 1px solid rgb(32, 95, 63);
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+    color: black;
+}
+
+QComboBox:editable {
+    background: rgb(218,242,230);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background: rgb(218,242,230);
+}
+
+QComboBox:on {
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-color: rgb(32, 95, 63);
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on {
+    top: 1px;
+    left: 1px;
+}
+
+QComboBox QAbstractItemView {
+    border: 2px solid rgb(32, 95, 63);
+    selection-background-color: rgb(218,242,230);
+    
+}
+
+QScrollBar{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #daf2e6, stop: 0.5 #98d4b6, stop: 0.5 #daf2e6, stop: 1.0 #98d4b6);
+}
+
+QToolTip {
+    border: 2px solid rgb(32, 95, 63);
+    border-radius: 4px;
+    background-color: rgb(218,242,230);
+    opacity: 100;
+}
+
+QStatusBar QLabel {
+    font: bold;
+    color: rgb(32, 95, 63);
+}
+
+QStatusBar{
+    background: rgb(152,212,182);
+    border: 1px solid rgb(32, 95, 63); 
+}
+
+QPlainTextEdit{
+    selection-background-color: rgb(218,242,230);
+    selection-color: rgb(32, 95, 63);
+}
+
+QLineEdit {
+    border: 1px solid rgb(32, 95, 63);
+    border-radius: 3px;
+    selection-color: rgb(32, 95, 63);
+    background: green;
+    selection-background-color: rgb(218,242,230);
+}

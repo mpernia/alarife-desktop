@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+
+QJSEditor:
+Copyright (c) 2010-2011, Herlin R. Matos Lastres <hmatos@grm.uci.cu>
+For licensing, see Alarife license.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>QJSEditor</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<script type="text/javascript" src="ckeditorMin.js"></script>
+</head>
+<body>
+
+<form onsubmit="extractFormValues()">
+	  <textarea cols="80" id="editor" name="editor" rows="10"></textarea>
+</form>
+
+<script type="text/javascript">
+
+
+CKEDITOR.replace( 'editor', {skin: 'v2'});
+
+CKEDITOR.on('instanceReady',
+      function( evt )
+      {
+         evt.editor.execCommand('maximize');
+      });
+
+</script>
+	 
+</body>
+</html>

@@ -1,0 +1,374 @@
+/**************************************************************************** 
+**
+** CopyLeft: 2012 Maikel Enrique Pernía Matos
+**
+** Contact: corba@grannet.grm.sld.cu
+**
+** This file is part of the Alarife-IV application.
+**
+** GNU General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU
+** General Public License version 3.0 as published by the Free Software
+** Foundation and appearing in the file LICENSE.GPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU General Public License version 3.0 requirements will be
+** met: http://www.gnu.org/copyleft/gpl.html.
+**
+** widgets						colors
+** widget 						rgb(192,150,110);
+** menubar and statusbar	    rgb(140,85,54);
+** 
+****************************************************************************/
+
+QDockWidget{
+	background: none;
+	background-color: rgb(140,85,54);
+}
+
+QWidget {
+   color: black;
+   selection-color: white;
+   background-color: rgb(239, 229, 220);
+}
+QLayout{
+	background: none;
+	background-color: rgb(150,115,85);
+}
+
+/*BEGIN QMenuBar*/
+QMenuBar{
+     border-image: none;
+     border-style: none;
+     border-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: rgb(150,115,85);
+     padding: 2px;
+     background: none;
+     background-color: rgb(140,85,54);
+}
+QMenuBar::item:hover {
+    border-width: 5;
+}
+QMenuBar::item:on {
+     border-width: 5;
+}
+QMenuBar::item{
+     background: none;
+     background-color: rgb(140,85,54);
+}
+QMenuBar::Separator{
+     background-color: rgb(140,85,54);
+}
+QMenu{
+     background: none;
+     background-color: rgb(140,85,54);
+}
+/*END QMenuBar*/
+
+QSplitter{
+ background: none;
+ background-color: rgb(150,115,85);
+}
+
+QSplitter:hover {
+ background: none;
+ background-color: rgb(150,115,85);
+}
+
+QToolBar{
+    background-color: rgb(192,150,110);
+    selection-color: black;
+    selection-background-color: rgb(140,85,54);
+    border-bottom-color: rgb(140,85,54);
+}
+
+QToolBox{
+    background-color: rgb(192,150,110);
+    selection-color: black;
+    selection-background-color: rgb(140,85,54);
+}
+
+QToolButton{
+    selection-color: black;
+    selection-background-color: rgb(140,85,54);
+    background-color: rgb(192,150,110);
+    border-width: 0px;
+    
+    border-style: solid;
+    border-radius: 4;
+    padding: 2px;
+}
+
+QToolButton:hover {
+    background-color: rgb(239, 229, 220);
+    border-color: rgb(140,85,54);
+    border-width: 2px;
+}
+
+QPushButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: rgb(239, 229, 220);
+    border-width: 2px;
+}
+
+/* We provide a min-width and min-height for push buttons
+   so that they look elegant regardless of the width of the text. */
+QPushButton {
+    background-color: rgb(239, 229, 220);    
+    border-width: 1px;
+    border-color: rgb(140,85,54);
+    border-style: solid;
+    border-radius: 5;
+    padding: 3px;
+  
+    min-width: 10.5ex;
+    min-height: 2.5ex;
+
+}
+
+QPushButton:hover {
+   background-color: rgb(192,150,110);
+   border-width: 2px;
+}
+
+/* Increase the padding, so the text is shifted when the button is
+   pressed. */
+QPushButton:pressed {
+   padding-left: 5px;
+   padding-top: 5px;
+   background-color: rgb(192,150,110);
+}
+
+QLabel, QAbstractButton {
+   font: normal;
+}
+
+/* Mark mandatory fields with a brownish color. */
+.mandatory {
+    color: red;
+}
+
+QSizeGrip {
+   image: url("$APP_PATH/styles/alarife/sizegrip.png");
+   width: 16px;
+   height: 16px;
+   background-color: rgb(140,85,54);
+}
+
+QStatusBar QLabel {
+   font: normal;
+   color: white;
+}
+QStatusBar{
+    background-color: rgb(140,85,54);
+}
+QStatusBar::item {
+    border-width: 1;
+    border-color: rgb(140,85,54);
+    background-color: rgb(140,85,54);
+    border-style: solid;
+    border-radius: 2;
+}
+
+QSpinBox, QTextEdit, QListView, QTableView {
+    background-color: white;
+    selection-color: rgb(140,85,54);
+    selection-background-color: rgb(239, 229, 220); 
+}
+
+/*QComboBox*/
+QComboBox{
+	background-color: white;
+   selection-color: rgb(140,85,54);
+   selection-background-color: rgb(239, 229, 220); 
+	border-image: url("$APP_PATH/styles/alarife/frame2.png") 5;
+}
+
+QComboBox[editable="false"] {
+	padding-left: 3px;
+   padding-right: 20px;
+   border-width: 5;	
+}
+
+QComboBox[editable="false"]::drop-down {
+	subcontrol-origin: padding;
+   subcontrol-position: top right;
+   width: 15px;
+   border-left-style: solid;
+   border-left-color: rgb(239, 229, 220);
+   border-left-width: 1px;
+}
+
+QComboBox[editable="false"]::down-arrow {
+	subcontrol-origin: content;
+   subcontrol-position: center;
+   position: relative;
+   left: 1px;
+}
+
+QComboBox[editable="false"]::down-arrow:on {
+	position: relative;
+   top: 1px;
+   left: 2px;
+}
+
+QComboBox[editable="false"]:hover, QComboBox[editable="true"]::drop-down:hover{
+   border-width: 5;
+}
+
+QComboBox[editable="false"]:on, QComboBox[editable="true"]::drop-down:on{
+   border-width: 5;
+}
+
+QComboBox[editable="true"]{
+   border-width: 2;
+}
+
+QComboBox[editable="true"]::drop-down {
+	border-width: 5;
+}
+/*QComboBox*/
+
+QListView {
+    show-decoration-selected: 1;
+}
+
+QListView::item:hover {
+    background-color: rgb(239, 229, 220); 
+}
+
+/* We reserve 1 pixel space in padding. When we get the focus,
+   we kill the padding and enlarge the border. This makes the items
+   glow. */
+QFrame {
+    border-width: 1px;
+    padding: 1px;
+    border-style: solid;
+    border-color: rgb(140,85,54);
+    border-radius: 5px;
+}
+
+QFrame:focus {
+    border-width: 2px;
+    padding: 0px;
+}
+
+/*QLineEdit*/
+QLineEdit[echoMode="2"] {
+    lineedit-password-character: 25cf;
+}
+
+QLineEdit{
+  border-width: 1px;
+  padding: 1px;
+  border-style: solid;
+  border-color: rgb(140,85,54);
+  border-radius: 5px;
+  background-color: white;
+  selection-color: rgb(140,85,54);
+  selection-background-color: rgb(239, 229, 220); 
+}
+
+QLineEdit:focus{
+    border-width: 2px;
+    padding: 0px;
+}
+/*QLineEdit*/
+
+/* A QLabel is a QFrame ... */
+QLabel {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+/* A QToolTip is a QLabel ... */
+QToolTip {
+	border: 2px solid rgb(192,150,110);
+	padding: 2px;
+	border-radius: 3px;
+	opacity: 200;
+}
+
+/* Nice to have the background color change when hovered. */
+QRadioButton:hover, QCheckBox:hover {
+	background-color: rgb(192,150,110);
+}
+
+QRadioButton {
+	spacing: 5px;
+   padding: 4px;
+   border-radius: 4;
+}
+QRadioButton::indicator {
+	width: 13px;
+	height: 13px;   
+}
+
+QRadioButton::indicator::unchecked {
+	image: url("$APP_PATH/styles/alarife/radiobutton_unchecked.png");
+}
+
+QRadioButton::indicator:unchecked:hover {
+	image: url("$APP_PATH/styles/alarife/radiobutton_unchecked_hover.png");
+}
+
+QRadioButton::indicator:unchecked:pressed {
+	image: url("$APP_PATH/styles/alarife/radiobutton_unchecked_pressed.png");
+}
+
+QRadioButton::indicator::checked {
+	image: url("$APP_PATH/styles/alarife/radiobutton_checked.png");
+}
+
+QRadioButton::indicator:checked:hover {
+	image: url("$APP_PATH/styles/alarife/radiobutton_checked_hover.png");
+}
+
+QRadioButton::indicator:checked:pressed {
+	image: url("$APP_PATH/styles/alarife/radiobutton_checked_pressed.png");
+}
+
+*::down-arrow, *::menu-indicator {
+	image: url("$APP_PATH/styles/alarife/down_arrow.png");
+	width: 7px;
+	height: 7px;
+}
+
+*::down-arrow:disabled, *::down-arrow:off {
+	image: url("$APP_PATH/styles/alarife/down_arrow_disabled.png");
+}
+
+*::up-arrow {
+	image: url("$APP_PATH/styles/alarife/up_arrow.png");
+	width: 7px;
+	height: 7px;
+}
+
+*::up-arrow:disabled, *::up-arrow:off {
+	image: url("$APP_PATH/styles/alarife/up_arrow_disabled.png");
+}
+
+/* Force the dialog's buttons to follow the Windows guidelines. */
+QDialogButtonBox {
+	button-layout: 0;
+}
+
+QTableView{
+   gridline-color: rgb(192,150,110);
+}
+
+QWebView{
+  border-width: 3px;
+  padding: 1px;
+  border-style: solid;
+  border-color: rgb(140,85,54);
+  border-radius: 5px;
+  background-color: white;
+  selection-color: rgb(140,85,54);
+  selection-background-color: rgb(239, 229, 220); 
+  border-image: url("$APP_PATH/styles/alarife/frame2.png") 5;
+}
+
+

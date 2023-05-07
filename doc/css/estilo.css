@@ -1,0 +1,22 @@
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+a:link {
+	color: blue;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: blue;
+}
+a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+a:active {
+	text-decoration: none;
+	color: blue;
+}

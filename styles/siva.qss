@@ -1,0 +1,129 @@
+/* #### custom qss for dolphin to use with the wood or cork theme####
+#### Author: Samuaz #####
+#### UPDATE V1.1
+#### thanks to th3r0b for your dolpher qss and help ######## */
+
+
+/*    ADD TRANSPARENT BACKGROUND TO THE NAVBAR AND STATUS BAR   */
+
+QSplitter{
+margin-top:0px;
+background:rgba(238,238,238, 255);
+  
+}
+
+/* add space to the statusbar text and bold and bit more small
+ * but also it add spaces to all labels we need best solution this is temporal */
+
+QLabel{
+margin-left:5px;
+}
+
+QSplitter QWidget > QFrame{
+      font-size: 9pt;
+      font-weight: bold;
+}
+
+QUrl {
+      font-size: 9pt;
+      font-weight: bold;
+}
+
+/*    ADD MORE SPACE IN THE SIDEBAR AND ICONVIEW SEPARATOR    */
+
+QMainWindow::separator{
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      margin-bottom: 0px;
+      margin-top: 0px;
+}
+
+
+/*    SIDEBAR FONT SIZE AND BOLD   */
+
+QDockWidget *{
+      font-size: 9pt;
+      font-weight: Bold;
+}
+
+
+/*    PADDINGS AND MARGIN OF THE SIDEBAR   */
+
+KItemListContainer{
+margin-top:-8px;
+margin-left:-5px;
+}
+
+/*    CHANGE BACKGROUND OF THE SPACEBAR   */
+
+KCapacityBar{
+background:#C0C0C0;
+      font-size: 9pt;
+      font-weight: bold;
+}
+
+
+/*    ADD BACKGROUND TO THE FINDER ICONVIEW   */
+
+DolphinViewContainer > DolphinView > QAbstractScrollArea {
+border:none;
+background:rgba(238,238,238, 255);
+margin-top:0px;
+margin-left:0px;
+}
+
+/*    INSERT THE SCROLLBAR IN TO THE ICONVIEW   */
+
+
+QMainWindow QSplitter QScrollBar:horizontal {
+      height: 22px;
+      margin: 3px 34px 3px 4px;
+      border-left: 7px transparent;
+      border-right: 7px transparent;
+  margin-top:100px;
+  margin-bottom:100%;
+}
+
+ QMainWindow QScrollBar:vertical {
+  margin-top:45px;
+  margin-bottom:50px;
+}
+
+QMainWindow QSplitter QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+      background: transparent;
+      
+}
+
+
+/* THE ICONSIZE SLIDER IN STATUSBAR */
+
+
+QSplitter QSlider::groove:horizontal {
+      height: 10px;
+      background:rgba(221,221,221, 255);
+      padding-left: -4px;
+      padding-right: -14px;
+      margin-right:5px;
+      border-radius:2px;
+}
+
+QSplitter QSlider::handle:horizontal {
+      background:#C0C0C0;
+      width: 15px;
+      height: 10px;
+      border-radius:0px;
+}
+
+/* SIDEBAR SCROLLBARS */
+
+QDockWidget QScrollBar:vertical {
+  width:0px;
+  margin-top:25%;
+  margin-bottom:25%;
+}
+
+
+QDockWidget QScrollBar:horizontal {
+  width:0px;
+}

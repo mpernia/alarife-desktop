@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Alarife 4. Manual de Usuario. [Proceso de Búsqueda]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../css/estilo.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../imagenes/iconos/favicon.png" type="image/x-icon" >
+<script language="javascript" src="../script/buscador.js"></script>
+<script language="javascript">
+var path="";
+var estado=false;
+var contenido="";
+var indice_imagen=0; 
+</script>
+</head>
+
+<body version="4">
+<div>
+  <h1>Alarife 4. Manual de Usuario.</h1>
+</div> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h3>Proceso de Búsqueda</h3></td>
+    <td align="right">
+       <input name="texto" type="text" class="edit" id="texto" onClick="if(document.getElementById('texto').value=='buscar...') document.getElementById('texto').value='';" onKeyPress="if(document.getElementById('texto').value=='buscar...') document.getElementById('texto').value=''; else if ((event.keyCode==13) && (document.getElementById('texto').value!='')) buscar(document.getElementById('texto').value);" value="buscar..." />
+<div width="171" height="23" border="0" usemap="#Map"><div>
+    </td>
+  </tr>
+</table>
+<div align="left"><a href="../index.htm" class="menu1">INICIO</a> - <a href="nivel_3.htm" class="menu1">Edición</a> </div>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td id="resultado" colspan="2">
+   <table width="100%"  border="0" cellspacing="20" cellpadding="0">
+    <tr>
+     <td width="97%">
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td align="justify">
+         <span class="titulo"><a name="subir" id="subir">Breve explicación de cómo la aplicación realiza la búsqueda de contenido.
+        </td>
+       </tr>
+       <tr>
+       <td><br></td>
+      </tr>
+       <tr>
+        <td background="../imagenes/line.png"><img src="../imagenes/pixel.png" width="1" height="3" border="0" /></td>
+       </tr>
+       <tr><td><br></td></tr><tr>
+       <tr>
+        <td><html><head> <title></title> </head><body style="cursor: auto; "> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><strong><span style="font-size:12px;">Contenido.</span></strong></span></p> <ul> <li style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><a href="#1"><span style="font-size:12px;">Descripción del proceso de búsqueda.</span></a></span></li> <li style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><a href="#2"><span style="font-size:12px;">Tipos de busquedas.</span></a></span></li> </ul> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><font class="Apple-style-span"><a name="1"></a><strong>Descripción del proceso de búsqueda.</strong></font> </span></span></p> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Alarife IV es un software que permite hacer varios tipos de búsqueda con el objetivo de facilitar la gestión de toda la información perteneciente a una enciclopedia. En este apartado solo se describirá la búsqueda relacionada con los temas y artículos, las otras búsquedas serán descritas en cada interfaz, si está presente esta opción. </span></span></p> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">La Búsque se activa al hacer clic sobre el ícono <img alt="Activa/Desactiva la opción de Búsqueda." src="../medias/42.png" style="width: 30px; height: 30px; " title="Activa/Desactiva la opción de Búsqueda.">, o al pulsar la combinación de teclas Ctrl + F. </span></span></p> <p style="text-align: justify; margin-left: 40px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><img alt="Barra de Búzqueda en ventana Principal." src="../medias/26.png" title="Barra de Búzqueda en ventana Principal."> <span style="color:#808080;">Barra de herramienta para realizar las búsquedas. </span></span></span></p> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Realizar la búsqueda: <span style="font-size:12px;">Una vez escrito el texto a buscar puede pulsar "Enter" o "Intro" o hacer clic en el botón "Buscar" para hacer efectiva la busqueda.&nbsp;</span></span></span></p> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;">Cancelar búsqueda: Para cancelar la busqueda puede pulsar la tecla "Esc" o hacer clic sobre el ícono <img alt="Limpiar Búsqueda" src="../medias/37.png" style="width: 30px; height: 30px; " title="Limpiar Búsqueda">, además al borrar todo el texto, automáticamente se cancela cualquier resultado previo de búsqueda. </span></span></span></p> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;"><span style="font-size:12px;">Resultado de búsqueda: Si la operación de buscar tiene éxito, los resultados serán mostrados en sus respectivas "rejillas" y si no se encuentra ninguna coincidencia, la caja de texto cambiará de color; de blanco a rojo.</span></span></span></span></p> <p style="text-align: justify; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;"><span style="font-size:12px;"><span style="font-size:12px;"><a name="2"></a><strong>Tipos de Búsqueda.</strong></span></span></span></span></span></p> <table border="0" cellpadding="1" cellspacing="1" style="width: 681px; "> <tbody> <tr> <td style="width: 102px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Buscar</span></span></td> <td style="width: 566px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Descripción</span></span></td> </tr> <tr> <td style="width: 102px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Por temas </span></span></td> <td style="text-align: justify; width: 566px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Para activar la búsqueda por temas debe marcar la opción "Buscar en temas", la búsqueda se realiza por los títulos de los temas. Esta búsqueda tiene una pequeña gramática que comprende conjunción y disyunción de predicado o criterio de búsqueda, ejemplo: </span></span> <ul> <li> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;">si escribe texto1 &amp;&amp; texto2 se interpretará como "<span style="color:#ff0000;">Seleccionar todos los temas que incluyan en el título el texto1 y el texto2 ". </span></span></span></span></li> </ul> <ul> <li> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;">si escribe texto1 || texto2 se interpretara como "<span style="color:#ff0000;">Seleccionar todos los temas que incluyan en el título el texto1 o el texto2".</span></span></span></span></li> </ul> </td> </tr> <tr> <td style="width: 102px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Por artículos </span></span></td> <td style="text-align: justify; width: 566px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Para activar la búsqueda por artículos debe marcar la opción "Buscar en artículos", la búsqueda se realiza por título, resumen y palabras claves. Esta búsqueda tiene una pequeña gramática que comprende conjunción y disyunción de predicado o criterio de búsquda, ejemplo: </span></span> <ul> <li> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;">Si escribe texto1 &amp;&amp; texto2 se interpretara como "<span style="color:#ff0000;">Seleccionar todos los artículos que (incluyan en el título o en el resumen o las palabras claves el texto1) Y (incluyan en el título o en el resumen o las palabras claves el texto2)".</span></span></span></span></li> </ul> <ul> <li> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;">Si escribe texto1 || texto2 se interpretara como "<span style="color:#ff0000;">Seleccionar todos los artículos que (incluyan en el título o en el resumen o las palabras claves el texto1) O (incluyan en el título o en el resumen o las palabras claves el texto2) ".</span></span></span></span></li> </ul> </td> </tr> <tr> <td style="width: 102px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Por autores</span></span></td> <td style="width: 566px; "> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;">Para activar la busqueda por autor&nbsp;debe marcar la opción "Buscar por autores relacionados", la búsqueda se realiza por los nombres de los autores relacionados con los articulos, ejemplo: </span></span> <ul> <li> <span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:12px;"><span style="font-size:12px;">si escribe texto1 se interpretará como "<span style="color:#ff0000;">Seleccionar todos los artículos que tengan autores relacionados y sus nombres incluyan la palabra texto1 "</span></span></span></span></li> </ul> </td> </tr> </tbody> </table> <p> &nbsp;</p>  </body></html></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <relacionados_vacio>
+    <tr>
+     <td>
+      <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#162F45">
+       <td>
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td bgcolor="#162F45" class="titulo_ventana">&nbsp;Art&iacute;culos Relacionados</td>
+        </tr>
+        <tr>
+         <td>
+          <table width="100%" border="0" cellspacing="3" cellpadding="3">
+           
+           <tr class="menu1">
+            <td width="4%"><img width="32" height="32" src="../imagenes/iconos/articulo.gif" /></td>
+            <td width="96%"><a href="articulo_15.htm" class="menu1">Manejo de artículos</a></td>
+           </tr>
+           
+           <tr class="menu1">
+            <td width="4%"><img width="32" height="32" src="../imagenes/iconos/articulo.gif" /></td>
+            <td width="96%"><a href="articulo_16.htm" class="menu1">Manejo de temas</a></td>
+           </tr>
+           
+          </table></td>
+          </tr>
+          </table></td>
+          </tr>
+          </table></td>
+          </tr>
+          </relacionados_vacio>
+          <tr><td><br/><div style="font-size: xx-small;"><br/>Publicado: jueves 07 de junio del 2012.<br/>&Uacute;ltima modificaci&oacute;n: miércoles 19 de septiembre del 2012.</div></td></tr>
+          </table></td>
+          </tr>      
+		 </table>
+<hr />
+<table width="100%"  border="0" cellspacing="5" cellpadding="0"><tr><td>Generado con Alarife-4 &copy; 2012</td><td align="right"><a href="#subir">[ Subir ]</a></td></tr></table>
+<map name="Map"><area shape="rect" coords="1,1,45,25" href="javascript:buscar(document.getElementById('texto').value);"></map></body>
+</html>

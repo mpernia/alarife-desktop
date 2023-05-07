@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/edit-state0.png</file>
+        <file>images/edit-state1.png</file>
+        <file>images/edit-save.png</file>
+        <file>images/edit-help.png</file>
+        <file>images/edit-image.png</file>
+        <file>images/articulo_property.png</file>
+    </qresource>
+</RCC>

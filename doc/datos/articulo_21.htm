@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Alarife 4. Manual de Usuario. [Editor de Alarife]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../css/estilo.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../imagenes/iconos/favicon.png" type="image/x-icon" >
+<script language="javascript" src="../script/buscador.js"></script>
+<script language="javascript">
+var path="";
+var estado=false;
+var contenido="";
+var indice_imagen=0; 
+</script>
+</head>
+
+<body version="4">
+<div>
+  <h1>Alarife 4. Manual de Usuario.</h1>
+</div> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h3>Editor de Alarife</h3></td>
+    <td align="right">
+       <input name="texto" type="text" class="edit" id="texto" onClick="if(document.getElementById('texto').value=='buscar...') document.getElementById('texto').value='';" onKeyPress="if(document.getElementById('texto').value=='buscar...') document.getElementById('texto').value=''; else if ((event.keyCode==13) && (document.getElementById('texto').value!='')) buscar(document.getElementById('texto').value);" value="buscar..." />
+<div width="171" height="23" border="0" usemap="#Map"><div>
+    </td>
+  </tr>
+</table>
+<div align="left"><a href="../index.htm" class="menu1">INICIO</a> - <a href="nivel_3.htm" class="menu1">Edición</a> </div>
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td id="resultado" colspan="2">
+   <table width="100%"  border="0" cellspacing="20" cellpadding="0">
+    <tr>
+     <td width="97%">
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td align="justify">
+         <span class="titulo"><a name="subir" id="subir">Describe como crear un artículo y las acciones básicas que se ejecutan: definir las propiedades, editarlo, guadarlo, insertar medias y emplear el corrector ortográfico.
+        </td>
+       </tr>
+       <tr>
+       <td><br></td>
+      </tr>
+       <tr>
+        <td background="../imagenes/line.png"><img src="../imagenes/pixel.png" width="1" height="3" border="0" /></td>
+       </tr>
+       <tr><td><br></td></tr><tr>
+       <tr>
+        <td><html><head> <title></title> </head><body> <p> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><strong>Contenido </strong></span></span></p> <ul> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="#generalidades">Generalidades.</a></span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="#CYEDITANDOA">Crear&nbsp;un artículo</a>.</span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="#crear">Propiedades del Artículo.</a></span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="#Guardar">Guardar</a>.</span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="#abrir">Insertar Medias.</a></span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="#Guardar">Corrección ortográfica</a>.</span></span></li> </ul> <p> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a name="generalidades"></a><strong>Generalidades.</strong></span></span></p> <ul> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">El editor de Alarife 4&nbsp;es un editor HTML, del tipo WYSIWYG (Lo que tu ves es lo que tu obtienes).</span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Es la herramienta para crear y editar el contenido de su sitio web o enciclopedia.</span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Está licenciado bajo GNU/GPL.</span></span></li> <li> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Está programado con Qt y reusa el código de CKEditor. </span></span></li> </ul> <p> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">En la barra de edición están las opciones más generales que le permiten a Ud. dar el formato adecuado a su artículo. Estas funcionalidades son las que poseen la mayoría de los editores de textos y se accede a ellas mediante el uso del ratón.</span></span></p> <p> <img alt="Barra de Edición" src="../medias/66.png" title="Barra de Edición"></p> <p> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a name="CYEDITANDOA"></a><strong>Creando y editando un artículo</strong>.&nbsp;</span></span></p> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Para crear un artículo Ud. debe dar clic sobre el ícono&nbsp;<img alt="Insertar nuevo artÃ­culo" src="../medias/31.png" title="Insertar nuevo artÃ­culo">"Nuevo Artículo".</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a name="nueva"></a><strong>Propiedades del Artículo</strong>.</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Inmediatamente después de haber dado clic en el ícono de "Nuevo Artículo", aparecerá la pantalla de "Propiedades del Artículo" donde Ud. le otorgará el título; si lo tomó directamente de otro medio referenciará la fuente y tecleará las palabras claves por las cuales dicho artículo podrá ser recuperado. Alarife 4 toma la hora del sistema y por defecto el artículo se asigna a quien lo crea. &nbsp;</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><img alt="Propiedades Generales del ArtÃ­culo." src="../medias/17.png" title="Propiedades Generales del ArtÃ­culo."></span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Al dar clic sobre la pestaña "Resumen", aparecerá la pantalla que le permitirá otorgar un pequeño resumen al artículo que se creará.</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><img alt="Resumen del ArtÃ­culo." src="../medias/18.png" title="Resumen del ArtÃ­culo."></span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Finalmente, al dar clic sobre la pestaña "Relaciones", aparecerá la pantalla donde Ud. podrá relacionar el artículo con el autor o autores y con otros artículos. Lógicamente, los autores tienen que estar registrados y los artículos creados.</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><img alt="Relaciones de Autores y ArtÃ­culos del ArtÃ­culo en EdiciÃ³n." src="../medias/19.png" title="Relaciones de Autores y ArtÃ­culos del ArtÃ­culo en EdiciÃ³n."></span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Luego de llenado estos campos, de clic en «Aceptar» y ya está en condiciones de crear o editar su artículo en la "Pantalla de Edición".</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><img alt="EdiciÃ³n de ArtÃ­culos de la Enciclopedia." src="../medias/13.png" title="EdiciÃ³n de ArtÃ­culos de la Enciclopedia."></span></span></div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Si Ud. desea volver sobre las propiedades de su artículo para edición o ajustes, sólo de clic en el ícono «Propiedades del Artículo»&nbsp;<img alt="Propiedades del artÃ­culo." src="../medias/34.png" title="Propiedades del artÃ­culo."></span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a name="abrir"></a><strong>Guardar.</strong></span></span></div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Para guardar el artículo o los cambios realizados de clic en el ícono «Guardar»&nbsp;<img alt="Guardar los cambios." src="../medias/40.png" title="Guardar los cambios."></span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a name="Guardar"></a><strong>Insertar Media.</strong></span></span></div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Para insertar una «Media» de clic en el ícono «Insertar Medias»&nbsp;<img alt="Insertar medias." src="../medias/39.png" title="Insertar medias.">&nbsp;y de inmediato aparecerá la pantalla «Medias de la Enciclopedia»</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><img alt="Medias de la Enciclopedia" src="../medias/64.png" title="Medias de la Enciclopedia"></span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Las Imágenes se incrustarán en su artículo, a diferencia de los Sonidos, Vídeos y X-Medias que serán identificados mediante íconos.</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><a name="insertar"></a><strong>Corrección Ortográfica.</strong></span></span></div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Para revisar la ortografía de su documento de clic en el ícono &nbsp;«Corrector Ortográfico»&nbsp;<img alt="Comprobar ortografÃ­a." src="../medias/41.png" title="Comprobar ortografÃ­a.">&nbsp;y de inmediato aparecerá la pantalla de «Corrección Ortográfica»&nbsp;</span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;"><img alt="Pantalla de corrección ortográfica." src="../medias/65.png" title="Pantalla de corrección ortográfica."></span></span></div> <div> &nbsp;</div> <div> <span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">Recuerde que además del programa «Aspell» Ud. debe tener instalado el idioma específico con el cual trabajará. Para español "es" y para inglés "en".</span></span></div>  </body></html></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    
+          <tr><td><br/><div style="font-size: xx-small;"><br/>Publicado: jueves 07 de junio del 2012.<br/>&Uacute;ltima modificaci&oacute;n: domingo 11 de noviembre del 2012.</div></td></tr>
+          </table></td>
+          </tr>      
+		 </table>
+<hr />
+<table width="100%"  border="0" cellspacing="5" cellpadding="0"><tr><td>Generado con Alarife-4 &copy; 2012</td><td align="right"><a href="#subir">[ Subir ]</a></td></tr></table>
+<map name="Map"><area shape="rect" coords="1,1,45,25" href="javascript:buscar(document.getElementById('texto').value);"></map></body>
+</html>

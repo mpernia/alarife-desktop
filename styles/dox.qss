@@ -1,0 +1,211 @@
+
+
+
+QDockWidget *{
+
+font-size: 7pt;
+
+ }
+
+ QDockWidget::close-button, QDockWidget::float-button {
+
+
+      margin-right: 4px;
+      margin-left: -2px;
+
+
+ }
+
+
+
+ QDockWidget::title {
+     text-align: left; /* align the text to the left */
+  border-style:    groove ridge  none groove;
+    border-color: rgba(160,160,160,120);
+      border-width: 2px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+      color: rgba(0,0,0,0);
+
+      margin-top: 4px;
+      margin-left: 4px;
+      margin-bottom: -4px;
+    margin-right: 4px;
+      padding-left: 1px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      padding-right: 4px;
+
+    background:#D9DDE1;
+  font-size: 6pt;
+ }
+
+ QDockWidget::close-button, QDockWidget::float-button {
+
+ }
+
+
+QDockWidget QListView, QDockWidget QTreeView{
+padding: 4px;
+background: #D9DDE1;
+border-right: 2px ridge rgba(160,160,160,120);
+border-left: 2px groove rgba(160,160,160,120);
+border-bottom: 2px ridge rgba(160,160,160,120);
+margin-left: 4px;
+margin-right:4px;
+
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+
+
+
+
+/*    SCROLLBARS   vertical   */
+
+
+    QDockWidget QScrollBar:vertical {
+         width: 12px;
+         margin: 0px 0px 40px 5px;
+         background:  #909090;
+	border-radius: 3px;
+          border: 1px solid;
+	  border-color:  #909090;
+     }
+
+    QDockWidget QScrollBar::handle:vertical {
+         background: #eeeeee;
+         border-radius: 2px;
+	  padding: 2px;
+         width: 12px;
+         min-height: 20px;
+
+     }
+
+
+
+    QDockWidget QScrollBar::add-line:vertical {
+         border: none;
+         height: 20px;
+         subcontrol-position: bottom;
+         subcontrol-origin: margin;
+	margin-left: 5px;
+
+     }
+
+    QDockWidget QScrollBar::sub-line:vertical {
+         border: none;
+
+         height: 20px;
+
+         subcontrol-position: left bottom;
+         subcontrol-origin: margin;
+	margin-left: 5px;
+	 position: absolute;
+	  bottom:15px;
+     }
+
+    QDockWidget QScrollBar:up-arrow:vertical{
+         background: #909090;
+         border: 1px solid;
+	  border-color: #909090;
+	   height: 2px;
+         width: 4px;
+         border-top-right-radius: 3px;
+         border-top-left-radius: 3px;
+	  padding: 0px;
+     }
+
+    QDockWidget QScrollBar::down-arrow:vertical {
+         background: #909090;
+         border: 1px solid;
+	  border-color: #909090;
+	   height: 2px;
+         width: 4px;
+         border-bottom-right-radius: 3px;
+         border-bottom-left-radius: 3px;
+	  padding: 0px;
+     }
+
+    QDockWidget QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+         background: none;
+     }
+
+
+/*    SCROLLBARS    horizontal  */
+
+
+    QDockWidget QScrollBar:horizontal {
+         height: 12px;
+         margin: 5px 40px 0px 0px;
+         background:  #909090;
+	border-radius: 3px;
+          border: 1px solid;
+	  border-color:  #909090;
+     }
+
+    QDockWidget QScrollBar::handle:horizontal {
+         background: #eeeeee;
+         border-radius: 2px;
+	  padding: 2px;
+         height: 12px;
+         min-width: 20px;
+
+     }
+
+
+
+    QDockWidget QScrollBar::add-line:horizontal {
+         border: none;
+         width: 20px;
+         subcontrol-position: right;
+         subcontrol-origin: margin;
+	 margin-top: 5px;
+
+     }
+
+    QDockWidget QScrollBar::sub-line:horizontal {
+         border: none;
+         width: 20px;
+         subcontrol-position: top right;
+         subcontrol-origin: margin;
+	 position: absolute;
+	  right:15px;
+	margin-top: 5px;
+     }
+
+    QDockWidget QScrollBar:left-arrow:horizontal{
+         background: #909090;
+         border: 1px solid;
+	  border-color: #909090;
+	   height: 4px;
+         width: 2px;
+         border-bottom-left-radius: 3px;
+         border-top-left-radius: 3px;
+	  padding: 0px;
+     }
+
+    QDockWidget QScrollBar::right-arrow:horizontal {
+         background: #909090;
+         border: 1px solid;
+	  border-color: #909090;
+	   height: 4px;
+         width: 2px;
+         border-bottom-right-radius: 3px;
+         border-top-right-radius: 3px;
+	  padding: 0px;
+     }
+
+    QDockWidget QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+         background: none;
+     }
+
+
+
+/*--------END-OF-FILE---------*/
+
+
+
+
+
